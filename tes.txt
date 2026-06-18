@@ -1,0 +1,2 @@
+
+g++ main.cpp Character.cpp Player.cpp Monster.cpp -o rpg
