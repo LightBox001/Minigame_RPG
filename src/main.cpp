@@ -1,21 +1,25 @@
 #include "Player.h"
-#include "Monster.h"
+#include "Enemy.h"
+#include "BattleSystem.h"
 #include <iostream>
 #include <string>
 
 
 int main() {
-   Player player1("michael");
+  Player player1("Michael");
 
-   Monster golem("Golem", 200, 20);
+  Enemy golem("Golem", 200, 20);
 
-   player1.attack(golem);
+  player1.tampilkanStats();
 
-   std::cout << "Attack " << player1.getName() << " : " << player1.getAttackPower() << '\n';
-   // std::cout <<  
-   //
 
-   std::cout << "HP golem sekarang: " << golem.getHp() << '\n';
+  std::cout << "Game dimulai\n" << std::endl;
+  BattleSystem::startBattle(player1, golem);
+
+
+
+
+
 
    return 0;
 }

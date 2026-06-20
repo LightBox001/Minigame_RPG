@@ -1,2 +1,11 @@
 
 g++ main.cpp Character.cpp Player.cpp Monster.cpp -o rpg
+
+objek yg harus ada di projek:
+  Player
+  Enemy
+  Item
+  Dungeon
+  BattleSystem
+
+  

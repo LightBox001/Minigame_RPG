@@ -29,9 +29,9 @@ public:
 
   void addGold(Enemy& enemy);
 
-  void addExp(Enemy& enemy);   
+  int addExp(Enemy& enemy);   
 
-  void tampilkanStats();
+  int tampilkanStats();
 
 
 };

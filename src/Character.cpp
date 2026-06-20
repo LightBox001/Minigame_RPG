@@ -4,7 +4,7 @@ Character::Character(
   std::string name,
   int hp,
   int attackPower
-  ) : name(name), hp(hp), attackPower(attackPower) 
+  ) : name(name), hp(hp), fullHp(hp), attackPower(attackPower) 
 {
 }
 
@@ -27,4 +27,6 @@ int Character::getAttackPower() const {
 std::string Character::getName() const {
   return name;
 }
+
+
 
