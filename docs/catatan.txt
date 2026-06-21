@@ -1,0 +1,22 @@
+alur gameplay
+
+
+otomatis start, bagian menu gamenya terakhir aja dibuat, (gk terlalu penting soalnya game console):  
+
+// menu utama start
+==== rpg game ====
+1. Explore
+2. Shop
+2. stat player 
+
+// explore
+antara:
+  * lawan enemy
+  ketemu gold
+  ketemu rest area
+
+
+// setelah lawan enemy
+  
+
+

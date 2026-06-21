@@ -3,9 +3,10 @@
 
 
 Player::Player(std::string nama)
-  : Character(nama, 200, 45),
+  : Character(nama, 400, 45),
     level(1),
-    exp(0)
+    exp(0),
+    gold(0)
 {
 
 }
@@ -20,6 +21,10 @@ void Player::attack(Character& target, int damage) {
 
 void Player::addExp(int amount) {
   exp += amount;
+}
+
+void Player::addGold(int amount) {
+  gold += amount;
 }
 
 int Player::getExp() const {

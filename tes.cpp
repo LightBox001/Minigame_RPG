@@ -1,20 +1,34 @@
 #include <iostream>
+#include <string>
 
+
+std::string halo(){
+  std::string tes = "halo";
+  std::cout << tes << std::endl;
+  return tes;
+}
+
+bool tes() {
+  return true;
+}
 
 int main() {
-  bool tes = true; 
 
+  int a = 1;
+  while (true) {
+    while (true) {
+      if (a == 1) {
+        break;
+      }
+      
 
-  std::cout << "Halo" << std::endl;
-  while (tes) {
-    std::cout << "tes 123123" << std::endl;
-    tes = false;
+    }
 
-    std::cout << "tes 123123" << std::endl;
-    std::cout << "tes 123123" << std::endl;
-    std::cout << "tes 123123" << std::endl;
-    std::cout << "tes 123123" << std::endl;
   }
 
+
+
+
+  
   return 0;
 }

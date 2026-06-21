@@ -9,3 +9,21 @@ objek yg harus ada di projek:
   BattleSystem
 
   
+Minigame_RPG/src/util/util.h
+Minigame_RPG/src/util/util.cpp
+Minigame_RPG/src/BattleSystem.cpp
+Minigame_RPG/src/BattleSystem.h
+Minigame_RPG/src/Character.cpp
+Minigame_RPG/src/Character.h
+Minigame_RPG/src/Dungeon.cpp
+Minigame_RPG/src/Dungeon.h
+Minigame_RPG/src/Enemy.cpp
+Minigame_RPG/src/Enemy.h
+Minigame_RPG/src/Player.cpp
+Minigame_RPG/src/Player.h
+Minigame_RPG/src/item.cpp
+Minigame_RPG/src/item.h
+Minigame_RPG/src/main.cpp
+Minigame_RPG/main.o
+Minigame_RPG/tes.cpp
+Minigame_RPG/tes.exe

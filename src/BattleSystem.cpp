@@ -1,7 +1,6 @@
 #include "BattleSystem.h"
-#include <ios>
+#include "util/util.h"
 #include <iostream>
-#include <limits>
 #include <random>
 
 
@@ -26,22 +25,8 @@ bool BattleSystem::startBattle(Player& player, Enemy& enemy) {
 
     while (true) {
 
-      std::cout << "Choice: ";
-
-      int choice;
+      int choice = getIntInput("Choice: ");
       
-      if (!(std::cin >> choice)) {
-        std::cout << "Input harus berupa angka!" << std::endl;
-
-
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        continue;
-      }
-
-
-
-
       std::cout << '\n';
 
       if (choice == 1) {
@@ -56,7 +41,7 @@ bool BattleSystem::startBattle(Player& player, Enemy& enemy) {
         break;
       } else if (choice == 2) {
         std::cout << "Anda kabur" << std::endl;
-        return player.isAlive();
+        return false;
       } else {
         std::cout << "Pilihan anda tidak valid, masukkan sesuai pilihan di atas!" << std::endl;
         continue;
@@ -84,11 +69,14 @@ bool BattleSystem::startBattle(Player& player, Enemy& enemy) {
     std::cout << enemy.getName() << " HP: " << enemy.getHp() << '\n';
 
     std::cout << "\nAnda kalah\n";
+    std::cout << "Anda harus mengulang game ini dari awal lagi" << std::endl;
+
+
     return player.isAlive();
   } else { 
       std::cout << "\nAnda menang\n";
-      player.addExp(enemy);
-      player.addGold(enemy);
+      player.addExp(enemy.getExpReward());
+      player.addGold(enemy.getGoldReward());
 
       std::cout << '\n';
 

@@ -19,6 +19,8 @@ public:
 
   void addExp(int amount);
 
+  void addGold(int amount);
+
   int getLevel() const;
 
   int getExp() const;
@@ -28,6 +30,7 @@ public:
   int heal(int healAmount);
 
   void addGold(Enemy& enemy);
+  
 
   void addExp(Enemy& enemy);   
 
