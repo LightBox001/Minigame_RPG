@@ -27,3 +27,5 @@ Minigame_RPG/src/main.cpp
 Minigame_RPG/main.o
 Minigame_RPG/tes.cpp
 Minigame_RPG/tes.exe
+
+

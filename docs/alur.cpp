@@ -6,10 +6,10 @@ int main() {
   std::cout << "lantai sekarang: [] " << std::endl;
   std::cout << "1. explore: " << std::endl;
   std::cout << "2. shop: " << std::endl;
-  std::cout << "2. stat player: " << std::endl;
+std::cout << "2. stat player: " << std::endl;
 
 
-  
+
 
 
 }
