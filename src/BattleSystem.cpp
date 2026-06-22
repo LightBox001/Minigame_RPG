@@ -30,7 +30,6 @@ bool BattleSystem::startBattle(Player& player, Enemy& enemy) {
       std::cout << '\n';
 
       if (choice == 1) {
-        player.attack(enemy);
         isCriticalHit();
         if (isCriticalHit()) {
           damage = damage * 2;
@@ -38,6 +37,9 @@ bool BattleSystem::startBattle(Player& player, Enemy& enemy) {
         } else {
           std::cout << "Anda menyerang "<< enemy.getName() << ", damage = " << damage << "\n";
         }
+
+        player.attack(enemy, damage);
+
         break;
       } else if (choice == 2) {
         std::cout << "Anda kabur" << std::endl;

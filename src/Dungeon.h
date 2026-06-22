@@ -4,18 +4,17 @@
 
 class Dungeon {
 private:
-  static int currentFloor;
+  int currentFloor = 1;
 
-  Player player;
+  // Player player;
   //
   // Enemy enemy;
 
 public:
+  bool explore(Player& player);
 
-  static void explore(Player& player);
+  int getCurrentFloor();
 
-  static int getCurrentFloor();
-
-  static int randomEvent();
+  int randomEvent();
 
 };

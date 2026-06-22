@@ -55,7 +55,7 @@ win lose
 
 #### Jika Kalah
 
-* Game Over
+* Game Over, ulang dari awal
 
 ---
 
@@ -67,7 +67,7 @@ Reward:
 
 * * Gold
 
-Lalu kembali ke Explore.
+Lalu kembali ke menu utama
 
 ---
 
@@ -79,7 +79,7 @@ Reward:
 
 * HP dipulihkan
 
-Lalu kembali ke Explore.
+Lalu kembali ke menu utama
 
 ---
 
@@ -134,4 +134,18 @@ Menu dibuat setelah fitur utama selesai.
 ```
 
 
+* git commit 3
+  * memperbaiki critical damage, memperbaiki logic mati/kalah, dungeon menjadi class-objek(bukan statis lagi)
 
+
+
+
+
+* fitur yang sudah selesai 
+  * menu explore
+    * fight lawan monster/ ketemu rest area/ ketemu harta Karun
+    * kalau sudah di lantai 5, bakal ketemu bos.
+  * sistem kalau player mati/kalah (bakal menghentikan program, jadi harus ulang dari awal) fdifdifdfdfdf
+
+
+  *

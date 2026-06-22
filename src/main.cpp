@@ -14,6 +14,8 @@ int main() {
 
   Player player1("Michael");
 
+  Dungeon dungeon{};
+
   player1.tampilkanStats();
   std::cout << "Game dimulai" << std::endl;
 
@@ -32,7 +34,10 @@ int main() {
       std::cout << '\n';
 
       if (choice == 1) {
-        Dungeon::explore(player1);
+        if (!dungeon.explore(player1)) {
+          isKeluar = true;
+          break;
+        }
 
         while (true) {
           int kembali = getIntInput("Tekan 1 untuk Kembali: ");

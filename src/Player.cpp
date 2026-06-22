@@ -3,7 +3,7 @@
 
 
 Player::Player(std::string nama)
-  : Character(nama, 400, 45),
+  : Character(nama, 100, 45),
     level(1),
     exp(0),
     gold(0)

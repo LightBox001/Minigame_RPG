@@ -6,11 +6,8 @@
 #include <random>
 #include <iostream>
 
-int Dungeon::currentFloor = 0;
 
-
-
-void Dungeon::explore(Player& player) {
+bool Dungeon::explore(Player& player) {
 
   std::cout << "FLoor: " << getCurrentFloor() << std::endl;
 
@@ -22,9 +19,13 @@ void Dungeon::explore(Player& player) {
       
       std::cout << "=== END ===" << std::endl;
 
-      return;
+      return false;
+    ;
 
 
+    } else {
+      std::cout << "\nGame Over" << std::endl;
+      return false;
     }
   }
 
@@ -39,7 +40,11 @@ void Dungeon::explore(Player& player) {
       if (BattleSystem::startBattle(player, golem)) {
        std::cout << "floor ++" << std::endl;
        currentFloor += 1;
-     }
+     } else {
+      std::cout << "\nGame Over" << std::endl;
+      return false;
+    }
+
       
     } else {
 
@@ -50,8 +55,10 @@ void Dungeon::explore(Player& player) {
       if (BattleSystem::startBattle(player, giant)) {
        std::cout << "floor ++" << std::endl;
        currentFloor += 1;
-     }
-
+      } else {
+        std::cout << "\nGame Over" << std::endl;
+        return false;
+      }
     }
 
   } else if (event <= 80) {
@@ -63,6 +70,8 @@ void Dungeon::explore(Player& player) {
 
     std::cout << "Gold: +" << gold << std::endl;
 
+    return true;
+
   } else {
     std::cout << "Rest Area Ditemukan!" << std::endl;
 
@@ -70,8 +79,11 @@ void Dungeon::explore(Player& player) {
     player.heal(heal);
 
     std::cout << "HP +" << heal << std::endl;
+
+    return true;
   }
 
+  return true;
 
 }
 
